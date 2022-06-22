@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 import "hardhat/console.sol";
 
 // TODO: change name of Contract here. Also Don't forget to change file name as well.
-contract Contract {
+contract ContractTemplate {
 
     constructor() {
     }
