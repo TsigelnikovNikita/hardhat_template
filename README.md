@@ -5,10 +5,10 @@ smart-contract developing. You can find all of these in the ```hardhat.config.js
 
 You also can setting up settings of this config using .env file:
 - COMPILE_VERSION: version of solc compile what you want to use. By default is "0.8.4".
-- OPTIMIZER: enable (true) or disable (false) optimizer of the compliler. By default is true.
+- OPTIMIZER: enable (true) or disable (false) optimizer of the compliler. By default is false.
 - OPTIMIZER_RUNS: amount of runs for your optimizer. By default it is 200.
 - REPORT_GAS: enable (true) or disable (false) report about spended gas by your contract. This
-report will be generated when running test. By default is true.
+report will be generated when running test. By default is false.
 - RINKEBY_NETWORK_URI: URI of the Rinkeby RPC server. By default is empty. If you won't add this
 variable, you won't be able to use this network. It's strongly recommended don't add private info
 into the project files dirrectly.
