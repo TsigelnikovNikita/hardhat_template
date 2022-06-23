@@ -22,11 +22,14 @@ verification your smart-contract.
 It's **strongly recommended** don't add your private info (such as api keys or private keys) into the
 project files dirrectly and use .env file or environment variables!
 
-You also can use ```script/storage-layout.js``` script for checking storage layout of your
-smart-contract.
-
 ## How to use it?
 - clone the repo directly in your working directory using
 ```git clone https://github.com/TsigelnikovNikita/hardhat_template .```;
 - remove .git directory of this repo using ```rm -rf .git```;
 - install all dependencies using ```npm i```;
+
+## What you can do?
+
+# Storage layout
+You can use ```script/storage-layout.js``` script for checking storage layout of your
+smart-contract.

@@ -1,9 +1,9 @@
 require("@nomiclabs/hardhat-waffle");
-require("hardhat-dependency-compiler");
-require("hardhat-gas-reporter");
-require("solidity-coverage");
-require("hardhat-storage-layout");
-require("@nomiclabs/hardhat-etherscan");
+require("hardhat-dependency-compiler"); // https://www.npmjs.com/package/hardhat-dependency-compiler
+require("hardhat-gas-reporter"); // https://www.npmjs.com/package/hardhat-gas-reporter
+require("solidity-coverage"); // https://www.npmjs.com/package/solidity-coverage
+require("hardhat-storage-layout"); // https://www.npmjs.com/package/hardhat-storage-layout
+require("@nomiclabs/hardhat-etherscan"); // https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan
 
 require("dotenv").config();
 // You need to export an object to set up your config
@@ -46,13 +46,13 @@ module.exports = {
   }
 };
 
-// for case when user didn't define SIGNER_PRIVATE_KEY and RINKEBY_NETWORK_URI variables  
+// For case when user didn't define SIGNER_PRIVATE_KEY and RINKEBY_NETWORK_URI variables.
 if (process.env.SIGNER_PRIVATE_KEY == undefined ||
     process.env.RINKEBY_NETWORK_URI == undefined) {
   delete module.exports.networks.rinkeby;
 }
 
-// for case when user didn't define ETHERSCAN_API_KEY  
+// For case when user didn't define ETHERSCAN_API_KEY variable.
 if (process.env.ETHERSCAN_API_KEY == undefined) {
   delete module.exports.etherscan;
 }
