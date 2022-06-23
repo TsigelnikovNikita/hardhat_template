@@ -4,17 +4,17 @@ This is a simple template of hardhat project. Template contains a lot of useful 
 smart-contract developing. You can find all of these in the ```hardhat.config.js``` file.
 
 You also can setting up settings of this config using .env file:
-- COMPILE_VERSION: version of solc compile what you want to use. By default is "0.8.4".
-- OPTIMIZER: enable (true) or disable (false) optimizer of the compliler. By default is false.
-- OPTIMIZER_RUNS: amount of runs for your optimizer. By default it is 200.
-- REPORT_GAS: enable (true) or disable (false) report about spended gas by your contract. This
+- ```COMPILE_VERSION```: version of solc compile what you want to use. By default is "0.8.4".
+- ```OPTIMIZER```: enable (true) or disable (false) optimizer of the compliler. By default is false.
+- ```OPTIMIZER_RUNS```: amount of runs for your optimizer. By default it is 200.
+- ```REPORT_GAS```: enable (true) or disable (false) report about spended gas by your contract. This
 report will be generated when running test. By default is false.
-- DEFAULT_NETWORK: default network will be used when you run tasks, scripts and test. By default
+- ```DEFAULT_NETWORK```: default network will be used when you run tasks, scripts and test. By default
 is "hardhat".
-- RINKEBY_NETWORK_URI: URI of the Rinkeby RPC server. By default is empty. If you won't add this
+- ```RINKEBY_NETWORK_URI```: URI of the Rinkeby RPC server. By default is empty. If you won't add this
 variable, you won't be able to use this network. It's strongly recommended don't add private info
 into the project files dirrectly.
-- SIGNER_PRIVATE_KEY: private key of your address. By default is empty. If you won't add this
+- ```SIGNER_PRIVATE_KEY```: private key of your address. By default is empty. If you won't add this
 variable, you won't be able to use any additional network. It's strongly recommended don't add
 private info into the project files dirrectly.
 
