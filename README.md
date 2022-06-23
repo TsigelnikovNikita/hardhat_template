@@ -9,6 +9,8 @@ You also can setting up settings of this config using .env file:
 - OPTIMIZER_RUNS: amount of runs for your optimizer. By default it is 200.
 - REPORT_GAS: enable (true) or disable (false) report about spended gas by your contract. This
 report will be generated when running test. By default is false.
+- DEFAULT_NETWORK: default network will be used when you run tasks, scripts and test. By default
+is "hardhat".
 - RINKEBY_NETWORK_URI: URI of the Rinkeby RPC server. By default is empty. If you won't add this
 variable, you won't be able to use this network. It's strongly recommended don't add private info
 into the project files dirrectly.
@@ -16,7 +18,8 @@ into the project files dirrectly.
 variable, you won't be able to use any additional network. It's strongly recommended don't add
 private info into the project files dirrectly.
 
-You also can use ```script/storage-layout.js``` script for checking storage layout of your smart-contract.
+You also can use ```script/storage-layout.js``` script for checking storage layout of your
+smart-contract.
 
 ## How to use it?
 - clone the repo directly in your working directory using
