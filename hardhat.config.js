@@ -34,6 +34,10 @@ module.exports = {
       url: `${process.env.RINKEBY_NETWORK_URI}`,
       accounts: [`${process.env.SIGNER_PRIVATE_KEY}`]
     },
+  },
+  dependencyCompiler: { // add your dependencies here
+    paths: [
+    ],
   }
 };
 
