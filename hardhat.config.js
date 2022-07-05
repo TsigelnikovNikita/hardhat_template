@@ -17,7 +17,7 @@ module.exports = {
     version: (process.env.COMPILE_VERSION) ? process.env.COMPILE_VERSION : "0.8.4",
     settings: {
       optimizer: {
-        enabled: (process.env.OPTIMIZER == "true") ? true : false,
+        enabled: process.env.OPTIMIZER == "true",
         runs: (process.env.OPTIMIZER_RUNS) ? process.env.OPTIMIZER_RUNS : 200,
       },
       outputSelection: {
@@ -28,13 +28,13 @@ module.exports = {
     },
   },
   gasReporter: {
-    enabled: (process.env.REPORT_GAS == "true") ? true : false
+    enabled: process.env.REPORT_GAS == "true"
   },
   defaultNetwork: (process.env.DEFAULT_NETWORK) ? process.env.DEFAULT_NETWORK : "hardhat",
   networks: {
     rinkeby: {
-      url: `${process.env.RINKEBY_NETWORK_URI}`,
-      accounts: [`${process.env.SIGNER_PRIVATE_KEY}`]
+      url: process.env.RINKEBY_NETWORK_URI,
+      accounts: [process.env.SIGNER_PRIVATE_KEY]
     },
   },
   etherscan: {
